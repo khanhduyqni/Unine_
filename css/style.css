@@ -1,0 +1,574 @@
+:root {
+    --color-primary: #459d7a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: hsla(0, 0.00%, 66.67%, 1.00);
+    font-size: 1.25vw;
+    line-height: 1em;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    background-image: url(../image/bg-header-dot.svg), 
+    url(../image/bg-header-right.svg), 
+    url(../image/bg-header-left.svg);
+    background-position: 50% 50%, 100% 50%, 0px 0px;
+    background-size: auto 45.25em, auto 28em, auto 17.875em;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    overflow-x: hidden; /* Ngăn chặn tràn ra phía ngang */
+    overflow-y: auto; 
+}
+/*header*/
+header{
+    padding-top: 1em;
+    padding-bottom: 5em;
+    position:relative;
+    overflow:hidden;
+    margin-bottom: 10px;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+}
+.container-I{
+    margin-left: 100px;
+    width: 90%;
+    display: flex;
+}
+.logo-nav{
+    margin-top: 20px;
+    max-height: 1.625em;
+}
+.nav-menu{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+.nav-link-wraper{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-gap: 3.25em;
+}
+.navbar-nav{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    grid-column-gap: 3.25em;
+}
+.nav-btn-wrapper{
+    grid-column-gap: 1.75em;
+}
+.btn{
+    padding-top: 0.778em;
+    padding-right: 1.333em;
+    padding-bottom: 0.778em;
+    padding-left: 1.333em;
+    border-top-left-radius: 0.889em;
+    border-top-right-radius: 0.889em;
+    border-bottom-left-radius: 0.899em;
+    border-bottom-right-radius: 0.889em;
+    background-color: #72e485;
+    font-family: Lato;
+    color:hsla(0, 0.00%, 0.00%, 1.00);
+    font-size:  1.125em;
+    line-height: 1.3em;
+    font-weight: 400;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color:#99cca0;
+}
+.nav-link{
+    color:hsla(0, 0.00%, 100.0%, 1.00);
+    font-size: 1.125em;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+}
+.nav-link-wraper a {
+    text-decoration: none;
+}
+/*end header*/
+
+/*w-slider*/
+.w-slider{
+    margin-top: 80px;
+}
+.container .group-slide {
+    margin-top: 100px;
+    margin-left: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.group-slide{
+    position:relative;
+    overflow:hidden;
+    padding:50px;
+}
+.row{
+    display: flex;
+}
+.hero-text-wrapper{
+    position: relative;
+    max-width: 42.6em;
+    min-height: 0px;
+}
+.cropper{
+    width: 100%;
+    margin-left: 100px;
+}
+.hero-text-wrapper .cropper {
+    position: relative;
+    overflow: hidden;
+}
+.txt-xxl{
+    margin-top: 0px;
+    color:hsla(0, 0.00%, 100.0%, 1.00);
+    font-size: 4em;
+    line-height: 1.1em;
+    font-weight: 900;
+}
+.hero-text-wrapper .cropper  .txt-m {
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-style: Italic;
+    color: rgb(245, 239, 235);
+    margin-top: 60px;
+}
+.store-wrapper{
+    display: flex;
+    grid-column-gap: 1.5em;
+}
+.store-wrapper img{
+    height: 53px;
+    width: 175px;
+    margin-top: 50px;
+}
+.ratting-wrapper{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 1.25em;
+}
+.phone{
+    margin-left: 250px;
+}
+.amazon {
+    position: absolute;
+    right: 7.5em;
+    top: 27.5em;
+    width: 20em;
+    height: 50px;
+  }
+  
+.amazon-img {
+    box-shadow: 0 40px 60px 0 hsla(0, 0.00%, 20.00%, 0.20);
+  }
+  
+.mcd {
+    position: absolute;
+    right: 1.75em;
+    bottom: 1.5em;
+    width: 20em;
+    height: 50px;
+  }
+  
+.mcd {
+    box-shadow: 0 40px 60px 0 hsla(0, 0.00%, 20.00%, 0.20);
+  }
+/*end w-slider*/
+
+/* w-about */
+.w-about{
+    margin-top: 150px;
+    background-image: url(../image/b2.svg);
+    position: relative;
+    background-image: url("..//image/b2.svg"), linear-gradient(rgb(248, 248, 248), rgb(248, 248, 248));
+    background-blend-mode: multiply;
+    /* Áp dụng hiệu ứng nhân màu */
+    background-size: cover;
+    height: 800px;
+}
+.group-slide {
+    display: flex;
+    flex-wrap: wrap;
+}
+.group-title {
+    flex-basis: 100%; /* Chiếm toàn bộ chiều ngang */
+  }
+.title-about{
+    text-align: center;
+    margin-top: 50px;
+    color:#101010;
+    font-size: 2.5em;
+    line-height: 1.25em;
+    font-style: bold;
+}
+.dreption-about{
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.group-content .card{
+    padding-top: 1.875em;
+    padding-right: 1.875em;
+    padding-bottom: 1.875em;
+    padding-left: 1.875em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    width: 290px;
+    height: 360px;
+    justify-content: center;
+    margin-left: 10px;
+    background-color:#F8F8F8;
+    border-radius: 12px;
+    margin-top: 50px;
+}
+.group-content {
+    flex-basis: 25%; /* Điều chỉnh độ rộng theo nhu cầu */
+    padding: 5px;
+    box-sizing: border-box;
+}
+.card img{
+    height: 3.75em;
+    margin-bottom: 2em;
+}
+.card h3{
+    color: #101010;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.card p{
+    margin-top: 15px;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-style: italic;
+}
+/* hiệu ứng */
+.card {
+    transition: all 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    background-color: #f1f1f1;
+}
+.card:hover h1,
+.card:hover p {
+    opacity: 1;
+    color: #000;
+}  
+.card h1,
+.card p {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.card:hover{
+    background-color: rgb(136, 232, 152);
+} 
+/* end w-about */
+
+/* w-wrapper*/
+.w-wrapper{
+    background-color: #F8F8F8;
+    height: 1100px;
+}
+.wrapper-header{
+    display: flex;
+}
+.image-post-wrapper img{
+    margin-top: 100px;
+    margin-left: 100px;
+    border-top-left-radius: 0.625em;
+    border-top-right-radius: 0.625em;
+    border-bottom-left-radius: 0.625em;
+    border-bottom-right-radius: 0.625em;
+    box-shadow: 0 0 20px 6px hsla(0, 0.00%, 20.00%, 0.00 );
+}
+.text-wrapper{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.title-wrapper{
+    margin-top: 50px;
+    color:#101010;
+    font-size: 2.5em;
+    line-height: 1.25em;
+    font-style: bold;
+}
+.dreption-wrapper{
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.btn-wrapper{
+    margin-top: 30px;
+    padding-top: 0.875em;
+    padding-right: 1.5em;
+    padding-bottom: 0.875em;
+    padding-left: 1.5em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: #72e485;
+    color: hsla(0, 0.00%, 0.00%, 1.00);
+    text-decoration: none;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-decoration: none;
+}
+.btn-wrapper:hover{
+    background-color:#99cca0;
+}
+.wrapper-footer{
+    display: flex;
+}
+.card-wrapper .card{
+    padding-top: 1.875em;
+    padding-right: 1.875em;
+    padding-bottom: 1.875em;
+    padding-left: 1.875em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-radius: 12px;
+    width:228px;
+    height:310px;
+}
+.card:hover{
+    background-color: rgb(136, 232, 152);
+}
+.card-wrapper{
+    display:flex;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+.card-wrapper .card {
+    flex-basis: 45%; /* Điều chỉnh độ rộng theo nhu cầu */
+    margin: 45px; /* Tạo khoảng cách xung quanh các card */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+.card-wrapper img{
+    width:36px;
+    height:35px;
+
+} 
+.card-wrapper .card h3{
+    font-size:1.25em;
+    line-height: 1.5em;
+}
+.card-wrapper .card .text-sm{
+    font-size: 1.25em;
+    font-style: italic;
+    line-height: 1.5em;
+}  
+/* end w-wrapper*/
+
+/* w-comment */
+.w-comment{
+    padding-top: 5px;
+    position: relative;
+    background-image: url("..//image/b2.svg"), linear-gradient(rgb(248, 248, 248), rgb(248, 248, 248));
+    background-blend-mode: multiply;
+    /* Áp dụng hiệu ứng nhân màu */
+    background-size: cover;
+    height: 1600px;
+}
+.slider-comment{
+    margin-top:92px;
+    border-radius: 12px;
+    margin-left: 300px;
+}
+.slider-iteams{
+    width: 920px;
+    height: 280px;
+    position: relative;
+    display: flex;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding-top: 2.5em;
+    padding-right: 2em;
+    padding-bottom: 2.5em;
+    padding-left: 2em;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: hsla(0, 0.00%, 100.0%, 1.00);
+    margin-top: 50px;
+}
+.slider-title{
+    font-size:1.5em;
+    line-height: 1.5em;
+    font-style: Bold;
+    color:#101010;
+    margin-bottom: 10px;
+}
+.slider-dreption{
+    font-size: 1.125em;
+    font-style: italic;
+    line-height: 1.25em;
+}
+.slider-footer{
+    display: flex;
+    margin-top: 20px;
+}
+.slider-img img{
+    width: 48px;
+    height: 51px;
+    border-radius: 50%;
+}
+.name-wrapper{
+    margin-left: 25px;
+}
+.name-wrapper .txt-name{
+    margin-bottom: 4px;
+    color: #666;
+    font-size: 1.125em;
+    line-height: 1em;
+    font-weight: 400;
+    font-style: Bold;
+}
+.name-wrapper .txt-position{
+    font-size: 1.125em;
+    line-height: 1em;
+    font-weight: 400;
+    font-style: italic;
+}
+.slider-img-right{
+    margin-left: auto;
+}
+/* end w-comment */
+
+/* w-information*/
+.w-information{
+    padding-top: 10px;
+    position: relative;
+    background-image: url("..//image/b2.svg"), linear-gradient(rgb(114, 228, 133), rgb(114, 228, 133));
+    /* Tấm hình và màu nền xanh */
+    background-blend-mode: multiply;
+    /* Áp dụng hiệu ứng nhân màu */
+    background-size: cover;
+    height:450px;
+}
+.title-infomation .title-wrapper{
+    text-align: center;
+    margin-top: 100px;
+}
+.dreption-information{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.6em;
+    font-style: italic;
+    font-weight: 400;
+    color:#101010;
+}
+.croper-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.appstore img,
+.ggplay img {
+  width: 125px;
+  height: 50px;
+  margin: 10px; /* Khoảng cách giữa hai ảnh */
+}
+/* end w-information */
+
+/* footer */
+.footer{
+    justify-content: center;
+    height: 297px;
+}
+.footer-flex-container {
+    display: flex;
+    flex-direction: row;
+}
+.footer-image{
+    margin-top: 25px;
+    margin-left: 75px;
+}
+.sco-med-wrapper{
+    margin-top: 20px;
+    margin-left: 75px;
+    color: #FFF;
+    justify-content:space-between;
+    grid-column-gap: 1.5em;
+}
+.soc-icon {
+    font-size: 35px; /* Độ to của soc-icon */
+    background-color: #101010; /* Màu nền của soc-icon */
+    
+  }
+.soc-icon a {
+    color: #fff; /* Màu trắng cho biểu tượng */
+    text-decoration: none;
+    margin: auto;
+    margin-left: -1px;
+  }
+.footer-link-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color:rgb(248, 248, 248);
+    font-size: 1.125em;
+    line-height: 1.5em;
+    font-style:italic;
+  }
+.footer-link-list .list-item a {
+    text-decoration: none;
+    color:rgb(248, 248, 248);
+  }
+  .footer .footer-logo-wrapper .soc-icon{
+    color: #FFF;
+  }
+.footer-note {
+    overflow:hidden;
+    grid-column-gap: 3.25em;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 20px;
+  } 
+.footer-link-box .footer-txt{
+    color:#FFF;
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+.footer-link-note {
+    margin-left: 50px; /* Khoảng cách giữa các phần tử */
+}
+.copyright{
+    overflow: hidden;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    margin-top: 50px;
+    color: rgb(248, 248, 248);
+    text-align: center;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: hsla(0, 0.00%, 94.90%, 0.20 );
+    font-size: 1.125em;
+    text-transform: uppercase;
+}
+  
+/* end footer */
